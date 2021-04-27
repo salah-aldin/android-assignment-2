@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingLeft="125px"
+    android:paddingTop="50px"
+    android:paddingRight="125px"
+    android:paddingBottom="50px"
+    tools:context=".activities.SkillsActivity">
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:gravity="center"
+        android:text="LANGUAGES"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="84dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="148dp"
+                android:layout_height="42dp"
+                android:layout_weight="1"
+                android:text="First\ Language" />
+
+            <Spinner
+                android:id="@+id/firstLanguageSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="148dp"
+                android:layout_height="42dp"
+                android:layout_weight="1"
+                android:text="Second Language" />
+
+            <Spinner
+                android:id="@+id/secondLanguageSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:gravity="center"
+        android:text="Skills"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="376dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <CheckBox
+            android:id="@+id/programmingCheckBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Programming" />
+
+        <CheckBox
+            android:id="@+id/graphicDesignCheckBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Graphic Design" />
+
+        <CheckBox
+            android:id="@+id/videoEdittingCheckBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Video Editting" />
+
+        <CheckBox
+            android:id="@+id/vfxCheckBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="VFX" />
+
+        <CheckBox
+            android:id="@+id/drawingCheckBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Drawing" />
+
+        <CheckBox
+            android:id="@+id/paintingCheckBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Painting" />
+
+        <CheckBox
+            android:id="@+id/uiuxChechBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="UI/UX" />
+
+        <CheckBox
+            android:id="@+id/translatingCheckBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Translating" />
+
+        <CheckBox
+            android:id="@+id/writtingCheckBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Writting" />
+
+        <CheckBox
+            android:id="@+id/contentCreationCheckBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Content Creation" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/backButton"
+            android:layout_width="423dp"
+            android:layout_height="64dp"
+            android:layout_weight="1"
+            android:onClick="backOnClick"
+            android:text="Back" />
+
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="423dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/holo_blue_light"
+            android:onClick="saveOnClick"
+            android:text="Save"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/nextButton"
+            android:layout_width="423dp"
+            android:layout_height="64dp"
+            android:layout_weight="1"
+            android:onClick="nextOnClick"
+            android:text="Next" />
+
+    </LinearLayout>
+</LinearLayout>
